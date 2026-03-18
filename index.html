@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Saver</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Notes Saver</h1>
+            <p>Write and save your thoughts temporarily.</p>
+        </header>
+
+        <main>
+            <section class="note-input-section">
+                <textarea id="note-input" placeholder="Type your note here..." rows="4"></textarea>
+                <div class="input-actions">
+                    <button id="add-note-btn" class="primary-btn">Save Note</button>
+                    <button id="clear-all-btn" class="secondary-btn">Clear All</button>
+                </div>
+            </section>
+
+            <section class="notes-display-section" id="notes-container">
+                <!-- Notes will be injected here via JavaScript -->
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
